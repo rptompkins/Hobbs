@@ -27,14 +27,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="container">
-  <div class="header">
+<div class="containerfull">
+  <div class="header width">
     <img class='img-responsive' src='images/HobbsLogo.png'></img>
   </div>
-  <nav class="navbar">
-    <div class="container-fluid">
+  <nav class="navbar width">
   <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+      <a href="#" class="pull-left"><img src="/images/HobbsLogo.png" class='brand'></a>
         <button type="button" class="navbar-toggle collapsed" id="nav-icon4" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span></span>
           <span></span>
@@ -53,21 +53,19 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
-
-
+        <a href="#" class='social'>SocialHere</a>
       </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
   </nav>
 
-
-
-
-      <div class="jumbotron">
-        <p class="lead"><span class='caps'>STRATEGY DESIGN, INC.</span> collaborates with business leaders to help identify and update the goals and outcomes they want to achieve.</p>
+      <div class="row width">
+        <div class='col-xs-12 about '>
+          <p class="lead"><span class='caps'>STRATEGY DESIGN, INC.</span> collaborates with business leaders to help identify and update the goals and outcomes they want to achieve. When customized leadership training and coaching is one of the strategies to achieve goals, Strategy Design Inc. provides the training and facilitation needed to make the vision a reality, both within the company four walls and within the marketplace </p>
+        </div>
       </div>
-      
 
-      <div class="row marketing">
+      
+        <div class='bg1'>
+        <div class="row marketing width">
         <div class="col-xs-12 col-sm-4">
           <h4><a href="https://html5boilerplate.com/">Strategy</a></h4>
           <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
@@ -81,13 +79,19 @@
           <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
         </div>
       </div>
-      <div class="row lynne">
+      <div class="row lynne width">
+        <div class='col-xs-12 col-sm-6'>
+
+        </div>
+        <div class='col-xs-12 col-sm-6'>
+        
+        </div>
       </div>
   </div>
-      <div class="footer">
+      <div class="footer width">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-
+</div>
     
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -126,6 +130,7 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+
     </script>
   </body>
 </html>
