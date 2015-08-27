@@ -92,8 +92,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   width: 100%;
 }
 
-
-.bg {
+.bg2 {
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1B3699), to(#ffffff));
   background-image: -webkit-linear-gradient(top, #1B3699, #ffffff);
@@ -138,7 +137,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .about {
-  padding: 20px;
+  padding: 40px;
 }
 /* Custom page footer */
 .footer {
@@ -191,6 +190,13 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   }
   .header {
     display: block;
+  }
+  .about {
+  padding: 30px;
+  margin: 90px 0px;
+  }
+  .lynne {
+    width: 60%;
   }
 }
 
