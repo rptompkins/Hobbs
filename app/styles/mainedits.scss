@@ -1,0 +1,118 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/*Predefined Classes & Consistencies*/
+body {
+  background-image: url('../images/crossword.png');
+}
+.width {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Nav and Header*/
+
+/*Hamburger Icon*/
+#nav-icon4 {
+  width: 45px;
+  height: 40px;
+  position: relative;
+  bottom: 62px;
+  right: 10px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background-color: #173896;
+  border-radius: 11px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+  top: 14.4px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+  top: 28.8px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 2px;
+  background-color: #5DC2A5;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31.2px;
+  left: 2px;
+  background-color: #5DC2A5;
+}
+
+/*Jumbotron*/
+
+/*Marketing Body*/
+
+/*Lynne Hobbs Bio*/
+
+/*Quote to Testimonials*/
+
+/*Contact Form*/
+
+/*Footer*/
+
+
+/*Larger Viewports*/
+@media screen and (min-width: 768px) {
+
+/*Nav and Header*/
+.logo {
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid #A4E9DB;
+  width: 100%;
+  height: 200px;
+  		img {
+    		padding: 40px 10px 0px 10px;
+  			}
+	}
+
+/*Jumbotron*/
+
+/*Marketing Body*/
+
+/*Lynne Hobbs Bio*/
+
+/*Quote to Testimonials*/
+
+/*Contact Form*/
+
+/*Footer*/
+
+}
