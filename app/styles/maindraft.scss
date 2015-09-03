@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  
+  
+
+  
+  
+
+    
+
+  .marketing {
+    margin: 30px 0px;
+    .columns {
+      padding: 0px 40px;
+      font-size: 16px;
+      text-align: justify;
+    }
+  img {
+    width: 100%;
+  }
+}
+  .testimonial {
+  padding: 80px 80px;
+  margin: 90px 0px;
+  font-size: 24px;
+  }
+
+.contact {
+    font-family: 'Lato', sans-serif; 
+    margin-bottom: 60px;
+    margin-top: 40px;
+  form {
+      padding: 30px 15px;
+    }
+    h1 {
+      position: relative;
+      left: 12px;
+      float: left;
+    }
+  p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 80px;
+  }
+}
+footer {
+  height: 90px;
+    .footerLinks {
+    text-align: center;
+    float: left;
+    margin-left: 40px;
+  }
+    .footerLinks li{
+      display: inline;
+      text-align: center;
+      font-size: 14px;
+      position: relative;
+      top: 12px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    div.col-xs-4.col-sm-2 > a > img {
+      position: relative;
+      top: 13px;
+      left: 55px;
+      float: right;
+    }
+    .copy {
+      position: relative;
+      top: 22px;
+      left: 15px;
+    }
+    .copy p {
+        margin-bottom: 0px;
+        font-size: 13px;
+        color: #EAEAEA;
+    }
+  }
+  .header,
+.marketing,
+.footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+.logo {
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid #A4E9DB;
+  width: 100%;
+  height: 200px;
+  img {
+    padding: 40px 10px 0px 10px;
+  }
+}
+}
+
+
+
