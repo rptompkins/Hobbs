@@ -32,7 +32,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   margin: 0;
   padding: 0;
 }
-
+.btn-info {
+  border: none;
+}
 /*Nav and Header*/
 .header {
   display: none;
@@ -190,6 +192,13 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 .bg2 {
   background-color: #5DC2A5;
 }
+.bg2 a:link, .bg2 a:visited, .bg2 a:active {
+     color: white;
+     text-decoration: none;
+    }
+.bg2 a:hover {
+    text-decoration: underline;
+}
 .testimonial {
   text-align: center;
   margin: 40px 0px;
@@ -199,8 +208,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   color: white;
     .source {
       color: #EAEAEA;
+      text-align: justify;
+      padding-top: 20px;
       }
-}
+  }
+
 
 /*Contact Form*/
 .contact {
@@ -270,9 +282,9 @@ footer {
     color: #5DC2A5;
     background: none;
   }
+
    #navbar-collapse > ul > li.active {
-    border-bottom: solid 2px #21429A;
-    border-radius: 5px;
+    border-bottom: solid 4px #21429A;
   }
   .navbar:after {
     content: "";
@@ -280,7 +292,6 @@ footer {
     background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(33,66,154,1) 50%,rgba(0,0,0,0) 100%);
     display: block;
     margin-bottom: 10px;
-    margin-top: 5px;
   }
   .social {
     display: inline-block;
@@ -307,6 +318,9 @@ footer {
    .about {
      margin: 10px 0px;
      text-align: left;
+     .lead {
+      margin-bottom: 50px;
+     }
    }
 
 /*Marketing Body*/
@@ -338,7 +352,7 @@ footer {
   .testimonial {
     padding: 80px 80px;
     margin: 90px 0px;
-    font-size: 24px;
+    font-size: 22px;
    }
 /*Contact Form*/
   .contact {
