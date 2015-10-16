@@ -15,9 +15,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   color: #000;
   padding: 0.2em 0;
 }
-body {
-  background-image: url('../images/crossword.png');
-}
+
 .width {
   max-width: 960px;
   margin: 0 auto;
@@ -34,7 +32,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.btn-info {
+  border: none;
+}
 /*Nav and Header*/
 .header {
   display: none;
@@ -114,7 +114,7 @@ body {
 .jumbotron {
   border-radius: 10px;
   margin-bottom: 60px;
-  }
+}
 
 .about {
   font-family: 'Lato', sans-serif;
@@ -133,7 +133,8 @@ body {
   font-family: 'Lato', sans-serif;
     .columns {
       margin: 50px 0px;
-      font-size: 16px;
+      padding: 0px 25px;
+      font-size: 18px;
       text-align: center;
       }
     .img-thumbnail {
@@ -157,7 +158,7 @@ body {
       color: White;
       }
      h4 {
-      font-size: 20px;
+      font-size: 22px;
       }
 }
 /*Lynne Hobbs Bio*/
@@ -165,7 +166,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   margin: 50px 0px;
-	img {
+  img {
       width: 60%;
       margin: 0 auto;
       -webkit-transform: scale(1);
@@ -173,14 +174,14 @@ body {
       -webkit-transition: .3s ease-in-out;
       transition: .3s ease-in-out;
       }
-  	img:hover {
+    img:hover {
       -webkit-transform: scale(1.02);
       transform: scale(1.02);
       }
-  	p.bioSummary {
+    p.bioSummary {
       text-align: justify;
       }
-  	p.lynne {
+    p.lynne {
       text-align: center;
       font-style: italic;
       font-size: 16px;
@@ -191,6 +192,13 @@ body {
 .bg2 {
   background-color: #5DC2A5;
 }
+.bg2 a:link, .bg2 a:visited, .bg2 a:active {
+     color: white;
+     text-decoration: none;
+    }
+.bg2 a:hover {
+    text-decoration: underline;
+}
 .testimonial {
   text-align: center;
   margin: 40px 0px;
@@ -200,8 +208,11 @@ body {
   color: white;
     .source {
       color: #EAEAEA;
+      text-align: justify;
+      padding-top: 20px;
       }
-}
+  }
+
 
 /*Contact Form*/
 .contact {
@@ -215,6 +226,12 @@ body {
         font-size: 20px;
         text-align: justify;
         padding: 20px 15px;
+      }
+      form > button {
+        background-color: #21429A;
+      }
+      form > button:hover {
+        background-color: #6DC8AE;
       }
 }
 
@@ -248,144 +265,147 @@ footer {
 @media screen and (min-width: 768px) {
 
 /*Nav and Header*/
-	.logo {
-	  text-align: center;
-	  background-color: white;
-	  border-bottom: 2px solid #A4E9DB;
-	  width: 100%;
-	  height: 200px;
-	  	img {
-	    	padding: 40px 10px 0px 10px;
-	  		}
-	}
-	.brand {
-	  display: none;
-	}
-	.navbar-nav > li > a:hover {
-	  color: #5DC2A5;
-	  background-color: white;
-	}
-	 #navbar-collapse > ul > li.active {
-	  border-bottom: solid 2px #21429A;
-	  border-radius: 5px;
-	}
-	.navbar:after {
-	  content: "";
-	  height: 2px;
-	  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(33,66,154,1) 50%,rgba(0,0,0,0) 100%);
-	  display: block;
-	  margin-bottom: 10px;
-	  margin-top: 5px;
-	}
-	.social {
-	  display: inline-block;
-	  float: right;
-	    img {
-	      width: 70%;
-	      margin-top: 9px;
-	    }
-	}
-	.header {
-	  display: block;
-	}
+  .logo {
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid #A4E9DB;
+    width: 100%;
+    height: 200px;
+      img {
+        padding: 40px 10px 0px 10px;
+        }
+  }
+  .brand {
+    display: none;
+  }
+  .navbar-nav > li > a:hover {
+    color: #5DC2A5;
+    background: none;
+  }
+
+   #navbar-collapse > ul > li.active {
+    border-bottom: solid 3px #21429A;
+    border-radius: 4px;
+  }
+  .navbar:after {
+    content: "";
+    height: 2px;
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(33,66,154,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .social {
+    display: inline-block;
+    float: right;
+      img {
+        width: 70%;
+        margin-top: 9px;
+      }
+  }
+  .header {
+    display: block;
+  }
 
 
 /*Jumbotron*/
-	.jumbotron {
+  .jumbotron {
        margin: 80px 0px 100px 0px;
        border-radius: 10px;
      }
-	.about p {
-	   margin: 20px 0px;
-	   font-size: 24px;
-	 }
-	 .about {
-	   margin: 10px 0px;
-	 }
+  .about p {
+     margin: 20px 0px;
+     font-size: 24px;
+   }
+   .about {
+     margin: 10px 0px;
+     text-align: left;
+     .lead {
+      margin-bottom: 50px;
+     }
+   }
 
 /*Marketing Body*/
-	.marketing {
-	    .columns {
-	      margin: 90px 0px;;
-	      font-size: 16px;
-	      text-align: justify;
-	    }
-	    img {
-	      width: 100%;
-	    }
-  	}
+  .marketing {
+      .columns {
+        margin: 90px 0px;;
+        text-align: justify;
+      }
+      img {
+        width: 100%;
+      }
+    }
 /*Lynne Hobbs Bio*/
-	.bio {
-	   font-size: 20px;
-	   margin: 90px 0px;
-	   text-align: inherit;
-	    img {
-	      width: 80%;
-	    }
-	    p.lynne {
-		   text-align: center;
-		   font-style: italic;
-		   font-size: 16px;
-		   margin-bottom: 40px;
-		 }
-	 }
+  .bio {
+     font-size: 20px;
+     margin: 90px 0px;
+     text-align: inherit;
+      img {
+        width: 80%;
+      }
+      p.lynne {
+       text-align: center;
+       font-style: italic;
+       font-size: 16px;
+       margin-bottom: 40px;
+     }
+   }
 /*Quote to Testimonials*/
-	.testimonial {
-	  padding: 80px 80px;
-	  margin: 90px 0px;
-	  font-size: 24px;
-	 }
+  .testimonial {
+    padding: 80px 80px;
+    margin: 90px 0px;
+    font-size: 22px;
+   }
 /*Contact Form*/
-	.contact {
+  .contact {
       font-family: 'Lato', sans-serif; 
       margin-bottom: 60px;
       margin-top: 40px;
-  		form {
-      	  padding: 30px 15px;
-    	}
-    	h1 {
-      	  position: relative;
-      	  left: 12px;
-      	  float: left;
-    	}
-  		p {
-    	  font-size: 20px;
-    	  text-align: left;
-    	  margin-top: 80px;
-  		}
-	}
+      form {
+          padding: 30px 15px;
+      }
+      h1 {
+          position: relative;
+          left: 12px;
+          float: left;
+      }
+      p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 80px;
+      }
+  }
 /*Footer*/
-	footer {
-  	  height: 90px;
-    	.footerLinks {
-    	  text-align: center;
-    	  float: left;
-    	  margin-left: 40px;
-   		}
-    	.footerLinks li{
-      	  display: inline;
-     	  text-align: center;
-      	  font-size: 14px;
-      	  position: relative;
-      	  top: 12px;
-      	  margin-left: 3px;
-      	  margin-right: 3px;
-    	}
-    	div.col-xs-4.col-sm-2 > a > img {
-      	  position: relative;
-      	  top: 13px;
-      	  left: 55px;
-      	  float: right;
-    	}
-    	.copy {
-      	  position: relative;
-      	  top: 22px;
-      	  left: 15px;
-    	}
-    	.copy p {
+  footer {
+      height: 90px;
+      .footerLinks {
+        text-align: center;
+        float: left;
+        margin-left: 40px;
+      }
+      .footerLinks li{
+          display: inline;
+        text-align: center;
+          font-size: 14px;
+          position: relative;
+          top: 12px;
+          margin-left: 3px;
+          margin-right: 3px;
+      }
+      div.col-xs-4.col-sm-2 > a > img {
+          position: relative;
+          top: 13px;
+          left: 55px;
+          float: right;
+      }
+      .copy {
+          position: relative;
+          top: 22px;
+          left: 15px;
+      }
+      .copy p {
           margin-bottom: 0px;
           font-size: 13px;
           color: #EAEAEA;
-    	}
-  	}
+      }
+    }
 }

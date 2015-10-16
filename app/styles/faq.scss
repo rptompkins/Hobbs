@@ -1,0 +1,60 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import 'HeaderAndFooter';
+// endbower
+
+.wrapper {
+	padding: 50px;
+	margin-top: -40px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+footer {
+	clear: both;
+}
+
+.question-green {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid $green;    
+    width: 0%;
+    transition: 1s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+.question-blue {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid $blue;    
+    width: 0%;
+    transition: 1s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+.transition {
+	transition: 1s ease;
+    width: 100%;
+}
+
+// .question-green {
+// 	border-bottom: solid 1px $green;
+// }
+// .question-blue {
+// 	border-bottom: solid 1px $blue;
+// }
+.answers {
+	margin-top: 40px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+}
+
+// Big Devices
+@media screen and (min-width: 768px) {
+
+	}

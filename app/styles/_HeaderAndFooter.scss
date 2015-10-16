@@ -1,0 +1,227 @@
+$font: 'Lato', sans-serif;
+$green: #5DC2A5;
+$blue: #4C6ACE;
+$margins: 175px 0px;
+
+/*Predefined Classes & Consistencies*/
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.width {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bg1, .bg2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.btn-info {
+  border: none;
+}
+/*Nav and Header*/
+.header {
+  display: none;
+}
+.brand {
+  width: 100%;
+}
+.navbar-header {
+  margin-bottom: -60px;
+}
+.navbar {
+  border-bottom: solid 2px #21429A;
+}
+.social { 
+  display: none;
+}
+#navbar-collapse > ul > li.active > a{
+	color: $green;
+}
+.navbar-nav > li > a:hover {
+	color: #5DC2A5;
+	background: none;
+}
+/*Hamburger Icon*/
+#nav-icon4 {
+  width: 45px;
+  height: 40px;
+  position: relative;
+  bottom: 0px;
+  right: 10px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background-color: #173896;
+  border-radius: 11px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+  top: 14.4px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+  top: 28.8px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 2px;
+  background-color: #5DC2A5;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31.2px;
+  left: 2px;
+  background-color: #5DC2A5;
+}
+
+/*Footer*/
+footer {
+  background-color: #21429A;
+    .copy {
+      color: #EEEEEE;
+      float: left;
+      position: relative;
+      top: 65px;
+        p {
+          font-size: 12px;
+        }
+      }
+    .footerLinks {
+      float: right;
+      padding-top: 10px;
+      padding-right: 10px;
+      line-height: 25px;
+      }
+    .footerLinks li{
+      display: inline-block;
+      }
+    .footerLinks a{
+      color: #6DC8AE;
+      }
+}
+
+/*Larger Viewports*/
+@media screen and (min-width: 768px) {
+	/*Nav and Header*/
+  .logo {
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid #A4E9DB;
+    width: 100%;
+    height: 200px;
+      img {
+        padding: 40px 10px 0px 10px;
+        }
+  }
+  .brand {
+    display: none;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+  #navbar-collapse > ul {
+  	position: relative;
+  	text-align: center;
+  	margin-top: -1px;
+  }
+   #navbar-collapse > ul > li.active {
+    border:  2px;
+    border-style: solid;
+    border-image: linear-gradient(to top, $blue, $green) 1 100%;
+    background-color: #F1F1F1;
+  }
+
+  .social {
+    display: inline-block;
+    float: right;
+      img {
+        width: 70%;
+        margin-top: 5px;
+      }
+  }
+  .header {
+    display: block;
+  }
+  /*Footer*/
+  footer {
+      height: 90px;
+      .footerLinks {
+        text-align: center;
+        float: left;
+        margin-left: 40px;
+      }
+      .footerLinks li{
+          display: inline;
+        text-align: center;
+          font-size: 14px;
+          position: relative;
+          top: 12px;
+          margin-left: 3px;
+          margin-right: 3px;
+      }
+      div.col-xs-4.col-sm-2 > a > img {
+          position: relative;
+          top: 13px;
+          left: 55px;
+          float: right;
+      }
+      .copy {
+          position: relative;
+          top: 22px;
+          left: 15px;
+      }
+      .copy p {
+          margin-bottom: 0px;
+          font-size: 13px;
+          color: #EAEAEA;
+      }
+    }
+}

@@ -2,118 +2,14 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import 'HeaderAndFooter';
 // endbower
 
-/*Predefined Classes & Consistencies*/
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-.width {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.bg1, .bg2 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.btn-info {
-  border: none;
-}
-/*Nav and Header*/
-.header {
-  display: none;
-}
-.brand {
-  width: 100%;
-}
-.navbar-header {
-  margin-bottom: -60px;
-}
-.navbar {
-  text-align: center;
-}
-.social { 
-  display: none;
-}
-/*Hamburger Icon*/
-#nav-icon4 {
-  width: 45px;
-  height: 40px;
-  position: relative;
-  bottom: 62px;
-  right: 10px;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-#nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  background-color: #173896;
-  border-radius: 11px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-#nav-icon4 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-#nav-icon4 span:nth-child(2) {
-  top: 14.4px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-#nav-icon4 span:nth-child(3) {
-  top: 28.8px;
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-}
-#nav-icon4.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0px;
-  left: 2px;
-  background-color: #5DC2A5;
-}
-#nav-icon4.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-#nav-icon4.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 31.2px;
-  left: 2px;
-  background-color: #5DC2A5;
-}
 
 /*Jumbotron*/
 .jumbotron {
   border-radius: 10px;
-  margin-bottom: 60px;
+  margin: 100px 0px 120px 0px;
 }
 
 .about {
@@ -122,6 +18,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       .caps {
         font-variant: small-caps;
         text-shadow: 0px 0px .5px;
+        font-size: 34px;
         }
 }
 
@@ -131,16 +28,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 .marketing {
   font-family: 'Lato', sans-serif;
+  padding: 100px 0px;
     .columns {
-      margin: 50px 0px;
+      margin: 80px 10px;
       padding: 0px 25px;
       font-size: 18px;
       text-align: center;
       }
     .img-thumbnail {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      left: 50%;
+      text-align: center;
       }
     img {
       width: 80%;
@@ -157,6 +53,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
     h4, p, a {
       color: White;
       }
+      p {
+      padding: 8px 14px 0px 14px;
+      }
      h4 {
       font-size: 22px;
       }
@@ -165,7 +64,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 .bio {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  margin: 50px 0px;
+  margin: 120px 0px;
   img {
       width: 60%;
       margin: 0 auto;
@@ -184,7 +83,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
     p.lynne {
       text-align: center;
       font-style: italic;
-      font-size: 16px;
+      font-size: 20px;
       margin-bottom: 40px;
       }
 }
@@ -201,8 +100,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 .testimonial {
   text-align: center;
-  margin: 40px 0px;
-  padding: 60px 60px;
+  margin: 80px 0px;
+  padding: 40px 60px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   color: white;
@@ -217,8 +116,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 /*Contact Form*/
 .contact {
     font-family: 'Lato', sans-serif; 
-    margin-bottom: 60px;
-    margin-top: 50px;
+    margin: 80px 0px;
       form {
         padding: 30px 15px;
         }
@@ -235,80 +133,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       }
 }
 
-/*Footer*/
-footer {
-  background-color: #21429A;
-    .copy {
-      color: #EEEEEE;
-      float: left;
-      position: relative;
-      top: 65px;
-        p {
-          font-size: 12px;
-        }
-      }
-    .footerLinks {
-      float: right;
-      padding-top: 10px;
-      padding-right: 10px;
-      line-height: 25px;
-      }
-    .footerLinks li{
-      display: inline-block;
-      }
-    .footerLinks a{
-      color: #6DC8AE;
-      }
-}
+
 
 /*Larger Viewports*/
 @media screen and (min-width: 768px) {
 
-/*Nav and Header*/
-  .logo {
-    text-align: center;
-    background-color: white;
-    border-bottom: 2px solid #A4E9DB;
-    width: 100%;
-    height: 200px;
-      img {
-        padding: 40px 10px 0px 10px;
-        }
-  }
-  .brand {
-    display: none;
-  }
-  .navbar-nav > li > a:hover {
-    color: #5DC2A5;
-    background: none;
-  }
-
-   #navbar-collapse > ul > li.active {
-    border-bottom: solid 4px #21429A;
-  }
-  .navbar:after {
-    content: "";
-    height: 2px;
-    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(33,66,154,1) 50%,rgba(0,0,0,0) 100%);
-    display: block;
-    margin-bottom: 10px;
-  }
-  .social {
-    display: inline-block;
-    float: right;
-      img {
-        width: 70%;
-        margin-top: 9px;
-      }
-  }
-  .header {
-    display: block;
-  }
-
 
 /*Jumbotron*/
   .jumbotron {
-       margin: 80px 0px 100px 0px;
+       padding: 80px 0px;
        border-radius: 10px;
      }
   .about p {
@@ -325,40 +158,51 @@ footer {
 
 /*Marketing Body*/
   .marketing {
+    margin: 0;
+    padding: 0;
       .columns {
-        margin: 90px 0px;;
+        margin: $margins;
+        // padding: 0px 10px;
         text-align: justify;
+        padding: 0px 40px;
       }
       img {
         width: 100%;
+      }
+      p {
+        padding: 8px 0px 0px 0px;
+      }
+      h4 {
+        font-size: 26px;
       }
     }
 /*Lynne Hobbs Bio*/
   .bio {
      font-size: 20px;
-     margin: 90px 0px;
+     margin: $margins;
      text-align: inherit;
       img {
         width: 80%;
       }
       p.lynne {
+        color: $blue;
        text-align: center;
        font-style: italic;
-       font-size: 16px;
+       padding-top: 10px;
        margin-bottom: 40px;
      }
    }
 /*Quote to Testimonials*/
   .testimonial {
-    padding: 80px 80px;
-    margin: 90px 0px;
+    // padding: 80px 80px;
+    margin: $margins;
     font-size: 22px;
+    padding: 0;
    }
 /*Contact Form*/
   .contact {
       font-family: 'Lato', sans-serif; 
-      margin-bottom: 60px;
-      margin-top: 40px;
+      margin: $margins;
       form {
           padding: 30px 15px;
       }
@@ -373,38 +217,4 @@ footer {
         margin-top: 80px;
       }
   }
-/*Footer*/
-  footer {
-      height: 90px;
-      .footerLinks {
-        text-align: center;
-        float: left;
-        margin-left: 40px;
-      }
-      .footerLinks li{
-          display: inline;
-        text-align: center;
-          font-size: 14px;
-          position: relative;
-          top: 12px;
-          margin-left: 3px;
-          margin-right: 3px;
-      }
-      div.col-xs-4.col-sm-2 > a > img {
-          position: relative;
-          top: 13px;
-          left: 55px;
-          float: right;
-      }
-      .copy {
-          position: relative;
-          top: 22px;
-          left: 15px;
-      }
-      .copy p {
-          margin-bottom: 0px;
-          font-size: 13px;
-          color: #EAEAEA;
-      }
-    }
 }
