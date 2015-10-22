@@ -2,12 +2,13 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import 'HeaderAndFooter';
 // endbower
+@import 'HeaderAndFooter';
 
 .wrapper {
-	padding: 50px;
+	padding: 25px;
 	margin-top: -40px;
+
 }
 
 h1 {
@@ -18,28 +19,18 @@ footer {
 	clear: both;
 }
 
-.question-green {
+.question-green, .question-blue {
     text-decoration: none;
     display: inline-block;
-    border-bottom: 1px solid $green;    
-    width: 0%;
-    transition: 1s ease;
-    white-space: nowrap;
-    height: 25px;
-}
-.question-blue {
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 1px solid $blue;    
-    width: 0%;
-    transition: 1s ease;
-    white-space: nowrap;
-    height: 25px;
-}
-.transition {
-	transition: 1s ease;
     width: 100%;
 }
+.question-blue {
+    border-bottom: 1px solid $blue;     
+}
+.question-green {
+    border-bottom: 1px solid $green;     
+}
+
 
 // .question-green {
 // 	border-bottom: solid 1px $green;
@@ -55,6 +46,6 @@ footer {
 }
 
 // Big Devices
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
 	}

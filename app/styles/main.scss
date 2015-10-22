@@ -2,9 +2,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import 'HeaderAndFooter';
 // endbower
-
+@import 'HeaderAndFooter';
 
 /*Jumbotron*/
 .jumbotron {
@@ -55,9 +54,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       }
       p {
       padding: 8px 14px 0px 14px;
+      font-size: 1.1em;
       }
      h4 {
-      font-size: 22px;
+      font-size: 2em;
       }
 }
 /*Lynne Hobbs Bio*/
