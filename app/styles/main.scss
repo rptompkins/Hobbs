@@ -112,7 +112,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       }
   }
 
-
 /*Contact Form*/
 .contact {
     font-family: 'Lato', sans-serif; 
@@ -133,12 +132,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
       }
 }
 
-
-
 /*Larger Viewports*/
 @media screen and (min-width: 768px) {
-
-
 /*Jumbotron*/
   .jumbotron {
        padding: 80px 0px;

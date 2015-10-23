@@ -1,0 +1,87 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import 'HeaderAndFooter';
+
+.width {
+  max-width: 1100px;
+  text-align: left;
+  padding: 0px 15px;
+}
+.no-show {
+	display: none;
+}
+.margin {
+	margin: 100px 0px;
+}
+.tools {
+	font-size: 1.8rem;
+	font-family: 'Roboto', sans-serif;
+}
+ul {
+	text-align: auto;
+}
+
+a.button {
+		color: #464646;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.4rem;
+		border: solid 1px #FFC704;
+}
+.button {
+	width: 80%;
+	height: 45px;
+	border-radius: 5px;
+	
+	background-color: #FFCF28;
+	margin-top: 10px;
+
+}	
+
+.buttons {
+	margin: 0 auto;
+	text-align: center;
+}
+ .block {
+ 	padding-top: 40px;
+ 	text-align: center;
+ 	margin: 0 auto;
+ }
+ .center {
+		text-align: center;
+	}
+.disc, .five  {
+	max-width: 80%;
+	text-align: center;
+}
+.disc {
+	padding-top: 60px;
+}
+ @media screen and (min-width: 768px) {
+ 	a.button {
+ 		font-size: 1.6rem;
+ 	}
+ 	.button {
+	width: 60%;
+	}	
+	.disc, .five {
+		float: right;
+		min-width: 270px;
+		max-width: 100%;
+	}
+	// .disc, .five {
+	// min-width: 300px;
+	// }
+	.no-show {
+		display: inherit;
+		padding-left: 120px;
+	}
+	.clear {
+		clear: both;
+	}
+	.mobile {
+		display: none;
+	}
+ }

@@ -45,7 +45,7 @@ $margins: 175px 0px;
   margin-bottom: -60px;
 }
 .navbar {
-  border-bottom: solid 2px #21429A;
+  border-bottom: solid 1px #21429A;
 }
 .social { 
   display: none;
@@ -173,7 +173,7 @@ footer {
   	margin-top: -1px;
   }
    #navbar-collapse > ul > li.active {
-    border:  2px;
+    border:  1px;
     border-style: solid;
     border-image: linear-gradient(to top, $blue, $green) 1 100%;
     background-color: #F1F1F1;
