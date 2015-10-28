@@ -6,58 +6,113 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import 'HeaderAndFooter';
 
 .width {
-  max-width: 980px;
-  text-align: left;
-  padding: 100px 15px;
+	max-width: 980px;
+	text-align: left;
+	padding: 0px 25px;
 }
 .no-show {
 	display: none;
 }
 .margin {
 	padding: 100px 0px;
+	ul li {
+		text-align: left;
+	}
+	p{
+		line-height: 1.6em;
+	}
 }
 .background1, .background2 {
-	background-color: #EAF5F5;
+	background-color: #E4F2F2;
 }
-.tools, .strategy, .leadership {
-	font-size: 1.8rem;
+#tools, #strategy, #leadership, .margin {
 	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	img {
+		padding-bottom: 30px;
+	}
 }
 
-ul {
+.strategy, .leadership {
+	position: relative;
+	h1 {
+		padding-bottom: 40px;
+	}
+	h2 {
+		color: #747474;
+	}
+	.pad {
+		padding-bottom: 60px;
+	}
+}
+.everything h2, .behaviors h2 {
+	padding-bottom: 20px;
+}
+#tools {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 1rem;
+}
+.wrapper ul {
+	list-style-type: circle;
+	text-indent: auto;
+	margin-left: auto;
+	li {
+		margin-top: 5px;
+	} 
+}
+h1 {
+	padding-bottom: 30px;
+	font-variant: small-caps;
+}
+.wrapper ul {
 	text-align: auto;
 }
-
-
-a.button {
-		color: #464646;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.4rem;
-		border: solid 1px #FFC704;
+.glyphicon {
+	display: none;
 }
-.button {
-	width: 80%;
-	height: 45px;
-	border-radius: 5px;
-	background-color: #FFCF28;
-	margin-top: 10px;
+.glyphgreen {
+	color: $green;
+}
+.glyphblue {
+	color: $blue;
 }
 .button:hover {
 	background-color: #E8BC23;
 }	
-
 .buttons {
 	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	button {
+		width: 80%;
+		height: 50px;
+		border-radius: 5px;
+		background-color: #FFCF28;
+		margin-top: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #464646;
+		font-family: 'Roboto', sans-serif;
+		font-size: .75rem;
+	}
+}
+.block {
+	padding-top: 40px;
+	text-align: center;
+	margin: 0 auto;
+	p {
+		font-size: .9rem;
+	}
+}
+.center {
 	text-align: center;
 }
- .block {
- 	padding-top: 40px;
- 	text-align: center;
- 	margin: 0 auto;
- }
- .center {
-	text-align: center;
-	}
+.border-green, .border-blue {
+	display: none;
+}
+
 .disc, .five  {
 	max-width: 80%;
 	text-align: center;
@@ -65,20 +120,66 @@ a.button {
 .disc {
 	padding-top: 60px;
 }
-body > div.container-fluid > div > div.strategy.width > div > div.col-xs-12.col-sm-6.center > ul > li, body > div.container-fluid > div > div.leadership.width > div > div.col-xs-12.col-sm-6.center > ul > li {
-	text-align: left;
-}
+
 .strategy img, .leadership img {
 	padding: 25px 0px;
 }
 @media screen and (min-width: 768px) {
- 	a.button {
- 		font-size: 1.6rem;
- 	}
-
- 	.button {
-	width: 60%;
-	}	
+	.border-blue, .border-green {
+		display: block;
+		width: 50%;
+		height: 2.5rem;
+		position: relative;
+		bottom: 32px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.border-blue {
+		border-top: 1px solid $blue;
+		border-left: 1px solid $blue;
+		border-right: 1px solid $blue;
+	}
+	.border-green {
+		border-top: 1px solid $green;
+		border-left: 1px solid $green;
+		border-right: 1px solid $green;
+	}
+	#tools, #strategy, #leadership, .margin {
+		font-size: 1.1rem;
+	}
+	#tools ul {
+		padding-top: 10px;
+	}
+	.buttons {
+		button {
+			height: 45px;
+			width: 60%;
+		}
+		a {
+			font-size: .9rem;
+		}
+	}
+	.wrapper ul {		
+		list-style-type: none;
+		text-indent: -1.3em;
+		margin-left: 1.3em;
+	}		
+	.strategy, .leadership {
+		position: relative;
+		.center {
+			bottom: 30px;
+		}
+		h1 {
+			top: 30px;
+		}
+		h2 {
+			padding-top: 0;
+		}
+	}
+	.glyphicon {
+		display: inline;
+	}
+	
 	.disc, .five {
 		float: right;
 		min-width: 270px;
@@ -94,4 +195,4 @@ body > div.container-fluid > div > div.strategy.width > div > div.col-xs-12.col-
 	.mobile {
 		display: none;
 	}
- }
+}

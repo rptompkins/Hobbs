@@ -1,0 +1,105 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import 'HeaderAndFooter';
+.width {
+  max-width: 980px;
+  padding: 0px 15px;
+}
+.consultants {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	p {
+		line-height: 1.5rem;
+		text-align: left;
+		padding: 5px 0px;
+	}
+	img {
+		width: 80%;
+		margin: 40px 0px;
+		text-align: center;
+		padding: 50px 0px 50px 0px;
+		border: solid 3px #D0D0D0;
+	}
+}
+h1 {
+	font-family: 'Lato', sans-serif;
+	padding-top: 20px;
+
+}
+.button:hover {
+	background-color: #E8BC23;
+}	
+.buttons {
+	margin-top: 40px;
+	text-align: center;
+	button {
+		width: 80%;
+		height: 50px;
+		border-radius: 5px;
+		background-color: #FFCF28;
+		margin-top: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #464646;
+		font-family: 'Roboto', sans-serif;
+		font-size: .75rem;
+	}
+}
+
+blockquote {
+	text-align: center;
+    font-family: $font;
+    border-left: none;
+    margin: 10px 0px 80px 0px;
+    border-left: solid 4px $green;
+    border-right: solid 4px $green;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 80px;
+}
+blockquote footer{
+	background-color: none;
+	display: block;
+	background: none;
+	padding-top: 20px;
+	font-size: .9rem;
+}
+@media screen and (min-width: 768px) {
+	.consultants p {
+			font-size: 1.1rem;
+		}
+	.consultants img {
+		width: 50%;	
+	}
+	blockquote {
+    padding: 40px;
+}
+blockquote footer{
+	background-color: none;
+	display: block;
+	background: none;
+	padding-top: 20px;
+	padding-bottom: -20px;
+	font-size: 1rem;
+}
+	.buttons {
+	text-align: center;
+	button {
+		width: 40%;
+		height: 50px;
+		border-radius: 5px;
+		background-color: #FFCF28;
+		margin-top: 10px;
+	}
+	a {
+		text-decoration: none;
+		color: #464646;
+		font-family: 'Roboto', sans-serif;
+		font-size: .75rem;
+	}
+}
+}

@@ -2,7 +2,9 @@ $font: 'Lato', sans-serif;
 $green: #5DC2A5;
 $blue: #4C6ACE;
 $margins: 175px 0px;
-
+html {
+  font-size: 100%;
+}
 /*Predefined Classes & Consistencies*/
 .container-fluid {
   margin: 0;
@@ -25,6 +27,9 @@ $margins: 175px 0px;
 .footer {
   padding-left: 15px;
   padding-right: 15px;
+}
+.glyphicon {
+  display: none;
 }
 .bg1, .bg2 {
   width: 100%;
@@ -55,42 +60,14 @@ $margins: 175px 0px;
 }
 .navbar-nav > li > a:hover {
 	color: #5DC2A5;
-	background-color: #F1F1F1;
-  margin-top: 1px;
+  width: 70%;
+  background: none;
 }
-ul li:hover a {
-  background: #F1F1F1;
-  // color: #fff;
-}
+
 ul li ul {
-  padding: 0;
-  position: absolute;
-  left: 0;
-  width: 140px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
+  display: none;
 }
-ul li ul li { 
-  background: #F1F1F1; 
-  display: block; 
-  color: $green;
-  padding: 10px;
-}
-ul li ul li a:hover {
-  color: $green;
-  text-decoration: none;
-}
-ul li:hover ul {
-  visibility: visible;
-  display: block;
-}
+
 /*Hamburger Icon*/
 #nav-icon4 {
   width: 45px;
@@ -189,6 +166,9 @@ footer {
         padding: 40px 10px 0px 10px;
         }
   }
+    .glyphicon {
+  display: inline;
+  } 
   .brand {
     display: none;
   }
@@ -196,11 +176,11 @@ footer {
     display: inline-block;
     vertical-align: top;
     float: none;
-}
+  }
 
 .navbar .navbar-collapse {
     text-align: center;
-}
+  }
   #navbar-collapse > ul {
   	position: relative;
   	text-align: center;
@@ -212,7 +192,37 @@ footer {
     border-image: linear-gradient(to top, $blue, $green) 1 100%;
     background-color: #F1F1F1;
   }
-
+  .navbar-nav > li > a:hover {
+  color: #5DC2A5;
+  margin-top: 1px;
+  width: 100%;
+}
+  ul li ul {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    width: 140px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: 1px 1px 2px #AEAEAE;
+    visibility: hidden;
+  }
+  ul li ul li { 
+    background: #F1F1F1; 
+    display: block; 
+    color: $green;
+    padding: 10px;
+    border-bottom: 1px dotted #C3C3C3;
+  }
+  ul li ul li a:hover {
+    color: $green;
+    text-decoration: none;
+  }
+  ul li:hover ul {
+    visibility: visible;
+    display: block;
+    z-index: 9999;
+  }
   .social {
     display: inline-block;
     float: right;
