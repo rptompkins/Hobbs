@@ -7,8 +7,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /*Jumbotron*/
 .jumbotron {
-  border-radius: 10px;
-  margin: 100px 0px 120px 0px;
+  padding: 50px 0px;
+  background: none;
 }
 
 .about {
@@ -19,14 +19,42 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
     text-shadow: 0px 0px .5px;
   }
 }
-
+.arrow {
+  margin: 0 auto;
+  height: 50px;
+  text-align: center;
+  color: $green;
+  border: 1px solid $green;
+  border-radius: 50px;
+  width: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  a, a:hover {
+    font-style: none;
+    text-decoration: none;
+    color: $green;
+  }
+  span {  
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+}
+.arrow:hover {
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 50px;
+  a {
+    color: white;
+  }
+}
 /*Marketing Body*/
 .bg1 {
   background-color: #4C6ACE;
 }
 .marketing {
   font-family: 'Lato', sans-serif;
-  padding: 100px 0px;
+  padding: 70px 0px;
   .columns {
     margin: 80px 0px;
     padding: 0px 70px;
@@ -69,6 +97,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   margin: 120px 0px;
   img {
     width: 60%;
+    max-width: 335px;
     margin: 0 auto;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -137,8 +166,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @media screen and (min-width: 768px) {
   /*Jumbotron*/
   .jumbotron {
-   padding: 60px 0px;
-   border-radius: 10px;
+   padding: 80px 0px 100px 0px;
  }
  .about p {
    margin: 20px 0px;
@@ -161,40 +189,40 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   padding: 0;
   .columns {
     margin: $margins;
-        padding: 0px 40px;
-      }
-      img {
-        width: 100%;
-      }
-      p {
-        padding: 8px 0px 0px 0px;
-      }
-      h4 {
-
-      }
-    }
-    /*Lynne Hobbs Bio*/
-    .bio {
-     margin: $margins;
-     text-align: inherit;
-     img {
-      width: 80%;
-    }
-    p.bioSummary {
-      font-size: 1.1rem;
-    }
-    p.lynne {
-      color: $blue;
-      text-align: center;
-      font-style: italic;
-      padding-top: 10px;
-      margin-bottom: 40px;
-      font-size: 1rem;
-    }
+    padding: 0px 40px;
   }
+  img {
+    width: 100%;
+  }
+  p {
+    padding: 8px 0px 0px 0px;
+  }
+  h4 {
 
-  /*Quote to Testimonials*/
-  .testimonial {
+  }
+}
+/*Lynne Hobbs Bio*/
+.bio {
+ margin: $margins;
+ text-align: inherit;
+ img {
+  width: 80%;
+}
+p.bioSummary {
+  font-size: 1.1rem;
+}
+p.lynne {
+  color: $blue;
+  text-align: center;
+  font-style: italic;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+}
+
+/*Quote to Testimonials*/
+.testimonial {
     // padding: 80px 80px;
     margin: $margins;
     font-size: 1.2rem;

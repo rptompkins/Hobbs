@@ -5,13 +5,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import 'HeaderAndFooter';
 
 .width {
-	max-width: 1100px;
+	max-width: 1000px;
 	margin: 0 auto;
 	text-align: center;
 }
 .testimonials {
 	font-family: $font;
-	
 	ul {
 		list-style-type: circle;
 		text-indent: auto;
@@ -55,7 +54,7 @@ blockquote {
 	position: relative;
 	padding: 30px 40px 0px 40px;
 	text-align: center;
-    border-left: none;
+	border-left: none;
 }
 blockquote:before, blockquote p.quote:after {
 	position: absolute;
@@ -84,24 +83,26 @@ blockquote footer{
 	
 }
 /*Larger Viewports*/
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+	.glyphicon {
+		color: $blue;
+	}
 	.testimonials {
 		ul {
 			list-style-type: none;
 			text-indent: -1.3em;
 		}
 	}
-	.glyphicon {
-		color: $blue;
+		body > div.container-fluid > div > div > div.col-xs-12.col-md-7 {
+		font-size: 1.1rem;
+		line-height: 2rem;
+		padding-top: 10px;
 	}
+}
+@media screen and (min-width: 992px) {
+
 	h2 {
 		text-align: left;
-	}
-	body > div.container-fluid > div > div > div.col-xs-12.col-md-7 {
-	font-size: 1.1rem;
-	line-height: 2rem;
-	padding-top: 10px;
 	}
 	body > div.container-fluid > div > div > div.col-xs-12.col-md-5 {
 		margin-top: 0;
