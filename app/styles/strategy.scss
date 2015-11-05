@@ -114,8 +114,11 @@ h1 {
 }
 
 .disc, .five  {
-	max-width: 80%;
+	max-width: 330px;
 	text-align: center;
+}
+.five {
+
 }
 .disc {
 	padding-top: 60px;
@@ -183,11 +186,12 @@ h1 {
 	.disc, .five {
 		float: right;
 		min-width: 270px;
-		max-width: 100%;
+		max-width: 90%;
 	}
 	.no-show {
 		display: inherit;
-		padding-left: 120px;
+		padding-left: 80px;
+		text-align: justify;
 	}
 	.clear {
 		clear: both;
