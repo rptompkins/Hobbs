@@ -4,6 +4,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 @import 'HeaderAndFooter';
 
+h1 {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 2rem;
+}
 .width {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -20,7 +26,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 	display: hidden;
 }
 .content {
-	padding: 90px 10px;
+	padding: 40px 10px;
 	border-bottom: none;
 }
 .border-bottom {
@@ -113,7 +119,7 @@ blockquote footer{
 		padding: 30px 50px;
 	}
 	.content {
-		padding: 90px 20px;
+		padding: 40px 20px;
 		border-bottom: dotted 1px $blue;
 	}
 	.none {

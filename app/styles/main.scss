@@ -12,8 +12,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .about {
-  font-family: 'Lato', sans-serif;
-  padding: 10px 40px 10px 40px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px 10px 20px;
   .caps {
     font-variant: small-caps;
     text-shadow: 0px 0px .5px;
@@ -21,43 +21,53 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 .arrow {
   margin: 0 auto;
-  height: 50px;
+  height: 70px;
   text-align: center;
   color: $green;
   border: 1px solid $green;
   border-radius: 50px;
-  width: 50px;
+  width: 70px;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  transition: background-color .4s;
   a, a:hover {
     font-style: none;
     text-decoration: none;
     color: $green;
+    transition: color .4s;
   }
   span {  
     display: block;
     position: relative;
-    top: 10px;
+    top: 13px;
   }
 }
 .arrow:hover {
   background-color: $green;
   border: 1px solid $green;
   border-radius: 50px;
+  transition: background-color .4s;
   a {
+    transition: color .4s;
     color: white;
   }
 }
 /*Marketing Body*/
+#marketing h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 60px;
+  }
 .bg1 {
   background-color: #4C6ACE;
 }
 .marketing {
-  font-family: 'Lato', sans-serif;
-  padding: 70px 0px;
+  font-family: 'Roboto', sans-serif;
   .columns {
     margin: 80px 0px;
-    padding: 0px 70px;
+    padding: 0px 25px;
   }
   .img-thumbnail {
     text-align: center;
@@ -93,8 +103,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 /*Lynne Hobbs Bio*/
 .bio {
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Roboto', sans-serif; 
   margin: 120px 0px;
+  h1 {
+    display: none;
+  }
   img {
     width: 60%;
     max-width: 335px;
@@ -132,8 +145,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 .testimonial {
   text-align: center;
   margin: 80px 0px;
-  padding: 40px 60px;
-  font-family: 'Lato', sans-serif;
+  padding: 40px 30px;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.0rem;
   color: white;
   .source {
@@ -144,7 +157,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /*Contact Form*/
 .contact {
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Roboto', sans-serif; 
   margin: 80px 0px;
   form {
     padding: 30px 15px;
@@ -154,19 +167,23 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
     padding: 20px 15px;
     font-size: 1rem;
   }
-  form > button {
+  form > input {
     background-color: #21429A;
   }
-  form > button:hover {
+  form > input:hover {
     background-color: #6DC8AE;
   }
 }
 
 /*Larger Viewports*/
 @media screen and (min-width: 768px) {
+  .arrow {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
   /*Jumbotron*/
   .jumbotron {
-   padding: 80px 0px 100px 0px;
+   padding: 60px 0px 100px 0px;
  }
  .about p {
    margin: 20px 0px;
@@ -188,8 +205,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   margin: 0;
   padding: 0;
   .columns {
-    margin: $margins;
+    margin: 90px 0px 120px 0px;
     padding: 0px 40px;
+    border-right: 1px dotted #C0C0C0;
+    &:last-child {
+      border-right: 0;
+    }
   }
   img {
     width: 100%;
@@ -201,10 +222,18 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
   }
 }
+.border {
+  border-right: 1px solid black;
+}
 /*Lynne Hobbs Bio*/
 .bio {
  margin: $margins;
  text-align: inherit;
+ h1 {
+  display: inherit;
+  text-align: left;
+  padding-bottom: 20px;
+ }
  img {
   width: 80%;
 }
@@ -215,8 +244,6 @@ p.lynne {
   color: $blue;
   text-align: center;
   font-style: italic;
-  padding-top: 10px;
-  margin-bottom: 40px;
   font-size: 1rem;
 }
 }
@@ -230,7 +257,7 @@ p.lynne {
   }
   /*Contact Form*/
   .contact {
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     margin: $margins;
     form {
       padding: 30px 15px;
