@@ -4,7 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import 'HeaderAndFooter';
-
+#pg2 {
 .width {
 	max-width: 980px;
 	text-align: left;
@@ -48,12 +48,14 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 		padding-bottom: 60px;
 	}
 }
+.everything {
+	padding: 100px 20px;
+}
 .everything h2, .behaviors h2 {
 	padding-bottom: 20px;
 }
 #tools {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 20px;
 	font-size: 1rem;
 	h1 {
 		padding-bottom: 20px;
@@ -67,9 +69,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 		margin-top: 5px;
 	} 
 }
-// .wrapper ul {
-// 	text-align: auto;
-// }
 .glyphicon {
 	display: none;
 }
@@ -86,14 +85,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 	margin: 0 auto;
 	margin-top: 10px;
 	text-align: center;
-	button {
+	 a {
 		width: 80%;
 		height: 50px;
 		border-radius: 5px;
 		background-color: #FFCF28;
 		margin-top: 10px;
-	}
-	a {
 		text-decoration: none;
 		color: #464646;
 		font-family: 'Roboto', sans-serif;
@@ -140,6 +137,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 		text-align: center;
 		margin: 0 auto;
 	}
+
 	.border-blue {
 		border-top: 1px solid $blue;
 		border-left: 1px solid $blue;
@@ -156,8 +154,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 	#tools ul {
 		padding-top: 10px;
 	}
+
 	.buttons {
-		button {
+		.button {
 			height: 45px;
 			width: 60%;
 		}
@@ -202,4 +201,5 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 	.mobile {
 		display: none;
 	}
+}
 }

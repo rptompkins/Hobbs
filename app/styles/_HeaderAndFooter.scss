@@ -5,7 +5,6 @@ $margins: 120px 0px;
 html {
   font-size: 100%;
 }
-/*Predefined Classes & Consistencies*/
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -32,7 +31,6 @@ html {
 .btn-info {
   border: none;
 }
-/*Nav and Header*/
 .header {
   display: none;
 }
@@ -60,8 +58,6 @@ html {
 ul li ul {
   display: none;
 }
-
-/*Hamburger Icon*/
 #nav-icon4 {
   width: 45px;
   height: 40px;
@@ -119,8 +115,6 @@ ul li ul {
   left: 2px;
   background-color: #5DC2A5;
 }
-
-/*Footer*/
 footer {
   background-color: #21429A;
   .copy {
@@ -147,10 +141,7 @@ footer {
    }
  }
 }
-
-/*Larger Viewports*/
 @media screen and (min-width: 768px) {
-	/*Nav and Header*/
   .logo {
     text-align: center;
     background-color: white;
@@ -229,7 +220,6 @@ footer {
   .header {
     display: block;
   }
-  /*Footer*/
   footer {
     height: 90px;
     .footerLinks {

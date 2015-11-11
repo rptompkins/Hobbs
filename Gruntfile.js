@@ -24,6 +24,7 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  grunt.loadNpmTasks('grunt-uncss');
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -56,6 +57,18 @@ module.exports = function (grunt) {
         tasks: ['newer:copy:styles', 'postcss']
       }
     },
+
+    // uncss: {
+    //   dist: {
+    //     files: {
+    //       'dist/css/strategy.css': ['dist/services.html'],
+    //       'dist/css/index.css': ['dist/index.html'],
+    //       'dist/css/testimonials.css': ['dist/testimonials.html'],
+    //       'dist/css/faq.css': ['dist/faq.html'],
+    //       'dist/css/consultants.css': ['dist/consultants.html']
+    //     }
+    //   }
+    // },
 
     browserSync: {
       options: {

@@ -4,6 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import 'HeaderAndFooter';
+#pg5 {
 .width {
 	max-width: 1000px;
 	padding: 0px 15px;
@@ -125,4 +126,5 @@ blockquote footer{
 			font-size: .75rem;
 		}
 	}
+}
 }

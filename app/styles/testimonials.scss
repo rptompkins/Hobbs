@@ -1,9 +1,10 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import 'HeaderAndFooter';
-
+#pg3 {
 h1 {
 	font-family: 'Roboto', sans-serif;
 	padding-top: 30px;
@@ -53,7 +54,7 @@ body > div.container-fluid > div > div > div.col-xs-12.col-md-7 {
 body > div.container-fluid > div > div > div.col-xs-12.col-md-5 {
 	margin-top: 30px;
 }
-.col-sm-5 {
+.col-sm-5 p {
 	font-family: $font;
 }
 blockquote {
@@ -88,7 +89,6 @@ blockquote footer{
 	padding-top: 20px;
 	
 }
-/*Larger Viewports*/
 @media screen and (min-width: 768px) {
 	.glyphicon {
 		color: $blue;
@@ -99,7 +99,7 @@ blockquote footer{
 			text-indent: -1.3em;
 		}
 	}
-		body > div.container-fluid > div > div > div.col-xs-12.col-md-7 {
+		.col-xs-12.col-md-7 {
 		font-size: 1.1rem;
 		line-height: 2rem;
 		padding-top: 10px;
@@ -114,7 +114,7 @@ blockquote footer{
 		margin-top: 0;
 	}
 	blockquote {
-		border-left: solid 5px gray;
+		border-left: solid 5px #C0C0C0;
 		border-top: none;
 		padding: 30px 50px;
 	}
@@ -128,4 +128,5 @@ blockquote footer{
 	.border-bottom {
 		display: none;
 	}
+}
 }
