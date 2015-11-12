@@ -1,7 +1,7 @@
 <?php
 
 /* Set e-mail recipient */
-$myemail  = "ripoto3@gmail.com";
+$myemail  = "";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['name'], "Enter your name");
@@ -32,7 +32,7 @@ End of message
 ";
 
 /* Send the message using mail() function */
-mail('rileyptompkins@gmail.com', $subject, $contents);
+mail('lynne@lynnehobbs.com', $subject, $contents);
 
 /* Redirect visitor to the thank you page */
 header('Location: thank-you.html');
